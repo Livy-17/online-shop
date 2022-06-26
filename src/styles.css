@@ -1,0 +1,15 @@
+.Navbar--ShoppingCartIcon {
+  color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+.Navbar--ShoppingCartIcon:hover {
+  background-color: rgba(40, 40, 40, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Navbar--ShoppingCartIcon:active {
+  background-color: rgba(40, 40, 40, 0.6);
+  border-radius: 10px;
+}
