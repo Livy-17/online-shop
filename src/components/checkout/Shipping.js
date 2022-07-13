@@ -105,7 +105,7 @@ const Shipping = props => {
   // )
 
   return (
-    <Box w={{base: "", md: "1000px"}} mt={{base: "", md: "20px"}}>
+    <Box w={{base: "", md: "1000px"}} mt={{base: "10px", md: "20px"}}>
         {/* <form method="post" id='shippingForm'> */}
           <Grid templateColumns={{base: "repeat(1, 1fr)", md: "repeat(2, 1fr)"}} gap="10px">
             <FormTextField name="firstName" label="First Name" required={true} id='firstName' />

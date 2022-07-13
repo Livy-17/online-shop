@@ -48,8 +48,8 @@ const Checkout = props => {
 
   if (!orderConfirmed) {
   return (
-    <Box h="1080px">
-      <Flex m={{base: "", md: "200px 0 140px 0"}} bg="white" p="50px 50px 50px 50px" borderRadius="10px">
+    <Box h={{base: "", md: "1080px"}}>
+      <Flex m={{base: "40px 0 0 0", md: "200px 0 140px 0"}} bg="white" p="50px 50px 50px 50px" borderRadius="10px">
         <Tabs index={tabIndex}>
           <TabList>
             <Tab fontWeight="extrabold">Shipping</Tab>

@@ -33,19 +33,19 @@ const Summary = props => {
 
   return (
     <Box>
-      <Flex flexDirection="column" w={{base: "", md: "1000px"}} mt={{base: "", md: "20px"}}>
-        <Heading fontSize="3xl">Order Summary</Heading>
+      <Flex flexDirection="column" w={{base: "", md: "1000px"}} mt={{base: "20px", md: "20px"}}>
+        <Heading fontSize="3xl" mb={{base: '20px', md: ''}}>Order Summary</Heading>
         <Review checkoutToken={props.checkoutToken} />
-        <Text mt={{base: "", md: "30px"}} fontSize="xl" fontWeight="bold">{`Total: ${props.checkoutToken.live.subtotal.formatted_with_symbol}`}</Text>
-        <Divider m={{base: "", md: "40px 0 40px 0"}} />
-        <Heading fontSize="3xl" mb={{base: "", md: "40px"}}>Payment Method</Heading>
+        <Text mt={{base: "30px", md: "30px"}} fontSize="xl" fontWeight="bold">{`Total: ${props.checkoutToken.live.subtotal.formatted_with_symbol}`}</Text>
+        <Divider m={{base: "30px 0 30px 0", md: "40px 0 40px 0"}} />
+        <Heading fontSize="3xl" mb={{base: "30px", md: "40px"}}>Payment Method</Heading>
         <Elements stripe={stripePromise}>
           <ElementsConsumer>
             {({elements, stripe}) => (
               <form onSubmit={(event) => {handlePay(event, elements, stripe);}}>
                 <CardElement />
-                <Flex mt={{base: "", md: "40px"}} justifyContent="space-between">
-                  <Button onClick={props.goTabOne} w={{base: "", md: "150px"}}>Back</Button>
+                <Flex mt={{base: "60px", md: "40px"}} justifyContent="space-between">
+                  <Button onClick={props.goTabOne} w={{base: "100px", md: "150px"}}>Back</Button>
                   {/* { props.checkoutToken.live.line_items &&  <Text>123</Text> }
                   { props.shippingData.firstName && <Text>456</Text> }
                   { props.shippingData.lastName && <Text>789</Text> }
@@ -54,7 +54,7 @@ const Summary = props => {
                   { props.shippingData.shippingSubdivision &&  <Text>rty</Text> }
                   { props.shippingData.postcode &&  <Text>fgh</Text> }
                   { props.shippingData.shippingOption && <Text>vbn</Text> } */}
-                  <Button type="submit" disabled={!stripe} w={{base: "", md: "150px"}} bg="blue.100">Pay</Button>
+                  <Button type="button" disabled={!stripe} w={{base: "100px", md: "150px"}} bg="blue.100">Pay</Button>
                 </Flex>
               </form>
             )}
