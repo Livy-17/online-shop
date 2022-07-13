@@ -68,7 +68,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Flex flexDirection="column" justifyContent="center" alignItems="center" bg="rgba(40, 40, 40, 0.1)">
+      <Flex flexDirection="column" justifyContent="center" alignItems="center" bg="#e9e9e9">
         <Navbar totalItems={cart.total_items} cart={cart} handleEmptyCart={handleEmptyCart} handleUpdateCartQuantity={handleUpdateCartQuantity} handleRemoveFromCart={handleRemoveFromCart} />
         <Routes>
           <Route path='/' element={<Intro />} />

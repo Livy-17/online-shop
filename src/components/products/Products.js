@@ -4,8 +4,8 @@ import Product from "./Product.js";
 
 const Products = props => {
   return(
-    <Box m={{base: "80px 0 40px 0", md: "100px 0 40px 0"}}>
-      <Grid gap="20px" templateColumns={{base: "auto", sm: "repeat(2, auto)", md: "repeat(3, auto)"}} >
+    <Box m={{base: "80px 0 40px 0", lg: "100px 0 40px 0"}}>
+      <Grid gap="20px" templateColumns={{base: "repeat(1, auto)", md: "repeat(2, auto)", xl: "repeat(3, auto)"}} >
         {props.products.map(
           obj => 
           <GridItem key={obj.id} >

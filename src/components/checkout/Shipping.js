@@ -80,10 +80,10 @@ const Shipping = props => {
   }
 
   // return (
-  //   <Box w={{base: "", md: "1000px"}} mt={{base: "", md: "20px"}}>
+  //   <Box w={{base: "", lg: "1000px"}} mt={{base: "", lg: "20px"}}>
   //     <FormProvider {...methods}>
   //       <form onSubmit={methods.handleSubmit(onSubmit)}>
-  //         <Grid templateColumns={{base: "repeat(1, 1fr)", md: "repeat(2, 1fr)"}} gap="10px">
+  //         <Grid templateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}} gap="10px">
   //           <FormTextField control={methods.control} name="firstName" label="First Name" required={true} />
   //           <FormTextField control={methods.control} name="lastName" label="Last Name" required={true} />
   //           <FormTextField control={methods.control} name="email" label="Email" required={true} />
@@ -96,8 +96,8 @@ const Shipping = props => {
   //         </Grid>
   //         <br />
   //         <Flex justifyContent="space-between">
-  //           <Button as={Link} to="/" w={{base: "",md: "150px"}}>Back to Shop</Button>
-  //           <Button type="submit" onClick={props.goTabTwo} w={{base: "", md: "150px"}} bg="blue.100">Next</Button>
+  //           <Button as={Link} to="/" w={{base: "",lg: "150px"}}>Back to Shop</Button>
+  //           <Button type="submit" onClick={props.goTabTwo} w={{base: "", lg: "150px"}} bg="blue.100">Next</Button>
   //         </Flex>
   //       </form>
   //     </FormProvider>
@@ -105,9 +105,9 @@ const Shipping = props => {
   // )
 
   return (
-    <Box w={{base: "", md: "1000px"}} mt={{base: "10px", md: "20px"}}>
+    <Box w={{base: "", lg: "800px", xl: "1000px"}} mt={{base: "10px", lg: "20px"}}>
         {/* <form method="post" id='shippingForm'> */}
-          <Grid templateColumns={{base: "repeat(1, 1fr)", md: "repeat(2, 1fr)"}} gap="10px">
+          <Grid templateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}} gap="10px">
             <FormTextField name="firstName" label="First Name" required={true} id='firstName' />
             <FormTextField name="lastName" label="Last Name" required={true} id='lastName' />
             <FormTextField name="email" label="Email" required={true} id='email' />
@@ -121,8 +121,8 @@ const Shipping = props => {
           </Grid>
           <br />
           <Flex justifyContent="space-between">
-            <Button type="button" as={Link} to="/" w={{base: "",md: "150px"}}>Back to Shop</Button>
-            <Button type="button" onClick={() => {onSubmit(); props.goTabTwo();}} w={{base: "", md: "150px"}} bg="blue.100">Next</Button>
+            <Button type="button" as={Link} to="/" w={{base: "",lg: "150px"}}>Back to Shop</Button>
+            <Button type="button" onClick={() => {onSubmit(); props.goTabTwo();}} w={{base: "", lg: "150px"}} bg="blue.100">Next</Button>
           </Flex>
         {/* </form> */}
     </Box>

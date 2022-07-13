@@ -48,8 +48,8 @@ const Checkout = props => {
 
   if (!orderConfirmed) {
   return (
-    <Box h={{base: "", md: "1080px"}}>
-      <Flex m={{base: "40px 0 0 0", md: "200px 0 140px 0"}} bg="white" p="50px 50px 50px 50px" borderRadius="10px">
+    <Box>
+      <Flex m={{base: "40px 0 0 0", lg: "100px 0 70px 0", xl: "130px 0 100px 0", '2xl': "200px 0 140px 0"}} bg="white" p="50px 50px 50px 50px" borderRadius="10px">
         <Tabs index={tabIndex}>
           <TabList>
             <Tab fontWeight="extrabold">Shipping</Tab>
@@ -76,7 +76,7 @@ const Checkout = props => {
     </Box>
   )} else if (props.order.customer) {
     return (
-      <Text m={{base: "", md: "40px 0 40px 0"}} pt={{base: "", md: "60px"}} fontSize="2xl" textAlign="center" >Your order has been placed!<br/>An confirmation email will be sent to your email address.</Text>
+      <Text m={{base: "", lg: "40px 0 40px 0"}} pt={{base: "", lg: "60px"}} fontSize="2xl" textAlign="center" >Your order has been placed!<br/>An confirmation email will be sent to your email address.</Text>
     )
   }
 };

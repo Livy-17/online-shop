@@ -19,8 +19,8 @@ const MyModal = props => {
           </ModalBody>
           <ModalFooter>
             <Flex>
-              <Button mr='10px' w='125px' variant="outline" bg="red.100" onClick={() => {props.handleEmptyCart(); props.onClose();}}>Empty Cart</Button>
-              <Button w='125px' variant="solid" bg="blue.100" as={Link} to="/checkout" onClick={props.onClose}>Checkout</Button>
+              <Button mr='10px' w={{base: '100px', sm: '125px'}} variant="outline" bg="red.100" onClick={() => {props.handleEmptyCart(); props.onClose();}}>Empty Cart</Button>
+              <Button w={{base: '100px', sm: '125px'}} variant="solid" bg="blue.100" as={Link} to="/checkout" onClick={props.onClose}>Checkout</Button>
             </Flex>
             {/* <Button variant="solid">Checkout</Button> */}
           </ModalFooter>
