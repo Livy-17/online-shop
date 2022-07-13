@@ -17,7 +17,7 @@ const FormTextField = props => {
   return (
     <GridItem>
       <label style={{fontWeight: "bold"}}>{props.label}</label>
-      <Input mt="5px" w="100%" name={props.name} id={props.id} />
+      <Input mt="5px" w="100%" name={props.name} id={props.id} isRequired={props.required} />
     </GridItem>
   )
 };

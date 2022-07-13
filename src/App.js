@@ -75,7 +75,7 @@ function App() {
           <Route path='/products' element={<Products products={products} handleAddToCart={handleAddToCart} />} />
           <Route path='/checkout' element={<Checkout cart={cart} order={order} handleCaptureCheckout={handleCaptureCheckout} error={errorMessage} handleEmptyCart={handleEmptyCart} />} />
         </Routes>
-      <Footer />
+      {/* <Footer /> */}
       </Flex>
     </BrowserRouter>
   );
