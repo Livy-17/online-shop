@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Image, Flex, Heading, Text } from "@chakra-ui/react";
 import { PlusSquareIcon } from "@chakra-ui/icons";
 
 const Product = props => {

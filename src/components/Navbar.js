@@ -1,6 +1,6 @@
 import React from "react";
-import { Badge, Image, HStack, Box, Flex, Heading, Text, Button, ModalContent } from "@chakra-ui/react";
-import { useDisclosure, useBreakpointValue } from "@chakra-ui/react";
+import { Badge, Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { useBreakpointValue } from "@chakra-ui/react";
 import MyDrawer from "./cart/MyDrawer.js";
 import MyModal from "./cart/MyModal.js";
 import {Link} from "react-router-dom";

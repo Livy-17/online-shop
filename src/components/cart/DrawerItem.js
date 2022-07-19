@@ -1,6 +1,6 @@
 import React from "react";
-import { Image, Box, Flex, Heading, Text } from "@chakra-ui/react";
-import { DeleteIcon, PlusSquareIcon } from "@chakra-ui/icons";
+import { Image, Flex, Heading, Text } from "@chakra-ui/react";
+import { DeleteIcon } from "@chakra-ui/icons";
 
 const CartItem = props => {
   return (

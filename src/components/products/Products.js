@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Grid, GridItem } from "@chakra-ui/react";
 import Product from "./Product.js";
 
 const Products = props => {

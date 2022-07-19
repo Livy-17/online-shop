@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './styles.css';
-import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import Products from "./components/products/Products.js";
 import Navbar from "./components/Navbar.js";
 import { commerce } from "./lib/commerce";
-import { BrowserRouter, Routes, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Checkout from './components/checkout/Checkout';
-import Footer from './components/Footer';
 import Intro from './components/Intro';
 
 function App() {
@@ -75,7 +74,6 @@ function App() {
           <Route path='/products' element={<Products products={products} handleAddToCart={handleAddToCart} />} />
           <Route path='/checkout' element={<Checkout cart={cart} order={order} handleCaptureCheckout={handleCaptureCheckout} error={errorMessage} handleEmptyCart={handleEmptyCart} />} />
         </Routes>
-      {/* <Footer /> */}
       </Flex>
     </BrowserRouter>
   );

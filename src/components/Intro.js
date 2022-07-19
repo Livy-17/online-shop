@@ -1,10 +1,10 @@
 import React from "react";
-import { useBreakpointValue, Box, Flex, Heading, Text, Image, Button } from "@chakra-ui/react";
+import { useBreakpointValue, Flex, Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const Intro = props => {
 
-  const Intro_pic = useBreakpointValue({base: "url('Intro_pic_base.jpeg')", lg: "url('Intro_pic_md.jpeg')"});
+  const Intro_pic = useBreakpointValue({base: "url('Intro_pic_base.webp')", lg: "url('Intro_pic_md.webp')"});
 
   return (
     <Flex h={{base: "100vh", lg: "100vh"}} w={{base: "100vw", lg: "100vw"}} alignItems="center" justifyContent="center" backgroundImage={Intro_pic} backgroundSize="cover">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Text, Box, Flex, Divider } from "@chakra-ui/react";
+import { Text, Flex } from "@chakra-ui/react";
 
 const Review = props => {
   return (
